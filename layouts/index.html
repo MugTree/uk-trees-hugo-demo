@@ -1,65 +1,19 @@
 {{ partial "head.html" . }}
-
 <main>
-<section>
-    <!-- this section is populated from content/_index.md -->
-    <header>
-    <h1>{{.Title}}</h1>
-    </header>
-
-    <article>
-    {{.Content}}
-    </article>
-
-    <footer>
-    <!-- Note that .Pages is the same as .Site.RegularPages on the homepage template. -->
-    {{ range first 10 .Pages }}
-        {{ .Render "summary"}}
-    {{ end }}
-    </footer>
-</section>
-
-<section>
-    <!-- this section is populated by pulling posts from the site -->
-    {{ range first 1 (where .Pages.ByPublishDate.Reverse "Section" "posts") }}
-        <article>
-            <header>
-            <h2>{{ .Title }}</h2>
-            <p><time datetime="{{.Date}}">{{ .Date.Format "Mon, Jan 2, 2006" }}</time></p>
-            </header>
-            {{ .Summary }}
-            <nav>
-            <ul>
-                <li><a href="{{ .RelPermalink }}">Read More &raquo;</a></li>
-            </ul>
-            </nav>
-        </article>
-    {{ end }}
-    <footer>
-    <a href="{{ "posts/" | absURL }}">All posts...</a>
-    </footer>
-</section>
-
-<section>
-    <!-- this section is populated by pulling articles from the site -->
-    {{ range first 1 (where .Pages.ByPublishDate.Reverse "Section" "articles") }}
-        <article>
-            <header>
-            <h2>{{ .Title }}</h2>
-            <p><time datetime="{{.Date}}">{{ .Date.Format "Mon, Jan 2, 2006" }}</time></p>
-            </header>
-            {{ .Summary }}
-            <nav>
-            <ul>
-                <li><a href="{{ .RelPermalink }}">Read More &raquo;</a></li>
-            </ul>
-            </nav>
-        </article>
-    {{ end }}
-    <footer>
-    <a href="{{ "trees/" | absURL }}">All trees...</a>
-    </footer>
-</section>
+  <!-- this section is populated from content/_index.md -->
+  <h1>{{.Title}}</h1>
+  <article>{{.Content}}</article>
+  {{ range (where .Site.RegularPages.ByPublishDate.Reverse "Section" "trees") }}
+  <article>
+    <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+  </article>
+  {{ end }}
+  <!-- -->
+  {{ range (where .Site.RegularPages.ByPublishDate.Reverse "Section" "posts") }}
+  <article>
+    <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+  </article>
+  {{ end }}
 </main>
 
 {{ partial "foot.html" .}}

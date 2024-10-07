@@ -3,9 +3,8 @@
 <main>
 <section>
     <header>
-    <h1>All Posts</h1>
+        <h1>All Posts</h1>
     </header>
-
     <article>
     <ul>
         {{ range where .Pages.ByPublishDate.Reverse "Section" "posts" }}
@@ -15,10 +14,13 @@
     </article>
 </section>
 
+
 <aside>
+    <header>
+        <h2>Other links</h2>
+    </header>
     <ul>
     <li><a href="{{ .Site.BaseURL }}">Home</a></p>
-    <li><a href="{{ "posts/" | absURL }}">Posts</a></p>
     <li><a href="{{ "trees/" | absURL }}">Trees</a></p>
     </ul>
 </aside>

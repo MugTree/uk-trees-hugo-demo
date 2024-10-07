@@ -9,17 +9,19 @@
     <article>
     <ul>
         {{ range where .Pages.ByPublishDate.Reverse "Section" "trees" }}
-        <li><a href="{{ .RelPermalink }}">{{ .Title }} - <time datetime="{{.Date}}">{{ .Date.Format "2006/01/02 15:04:05" }}</time></a></li>
+        <li><a href="{{ .RelPermalink }}">{{ .Title }} </a></li>
         {{ end }}
     </ul>
     </article>
 </section>
 
 <aside>
+    <header>
+        <h2>Other links</h2>
+    </header>
     <ul>
     <li><a href="{{ .Site.BaseURL }}">Home</a></p>
     <li><a href="{{ "posts/" | absURL }}">Posts</a></p>
-    <li><a href="{{ "trees/" | absURL }}">Trees</a></p>
     </ul>
 </aside>
 </main>

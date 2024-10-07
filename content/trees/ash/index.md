@@ -3,6 +3,7 @@ date = "2024-10-07T10:28:43+01:00"
 title = "Ash"
 type = "tree"
 draft = false
+summary = "This is a basic summary" 
 +++
 
 Ash trees are known for their graceful appearance and compound leaves consisting of several leaflets.
