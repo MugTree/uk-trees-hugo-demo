@@ -1,12 +1,12 @@
 +++
 date = "2024-10-07T10:31:25+01:00"
-title = "First Post"
+title = "Our new site   "
 type = "post"
-draft = true
+draft = false
 +++
 
-Lorem ipsum summary of the post.
+Welcome to our new site.
 
 <!--more-->
 
-Lorem ipsum rest of the post.
+We're writing this new site as a way to make the public more aware of all the trees in their environment.
