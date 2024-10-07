@@ -1,4 +1,3 @@
 baseURL = 'https://uktrees.com'
 languageCode = 'en-us'
 title = 'UK trees'
-disableKinds = ["taxonomy", "taxonomyTerm"]

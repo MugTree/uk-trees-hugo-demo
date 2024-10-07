@@ -1,7 +1,6 @@
-+++
-title = ''
-date = 2024-10-07T10:31:49+01:00
-draft = true
-+++
+---
+title: "Home Sweet Home"
+date: 2019-04-27T15:29:04-06:00
+---
 
 I like home pages.
