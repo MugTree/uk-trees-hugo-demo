@@ -6,7 +6,35 @@
     <description>Recent content on UK trees</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate></lastBuildDate>
+    <lastBuildDate>Mon, 07 Oct 2024 10:31:25 +0100</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>First Post</title>
+      <link>http://localhost:1313/posts/first-post/</link>
+      <pubDate>Mon, 07 Oct 2024 10:31:25 +0100</pubDate>
+      <guid>http://localhost:1313/posts/first-post/</guid>
+      <description>&lt;p&gt;Lorem ipsum summary of the post.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Ash</title>
+      <link>http://localhost:1313/trees/ash/</link>
+      <pubDate>Mon, 07 Oct 2024 10:28:43 +0100</pubDate>
+      <guid>http://localhost:1313/trees/ash/</guid>
+      <description>&lt;p&gt;Lorem ipsum summary of the article.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Oak</title>
+      <link>http://localhost:1313/trees/oak/</link>
+      <pubDate>Mon, 07 Oct 2024 10:28:39 +0100</pubDate>
+      <guid>http://localhost:1313/trees/oak/</guid>
+      <description>&lt;p&gt;Lorem ipsum summary of the article.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Fir</title>
+      <link>http://localhost:1313/trees/fir/</link>
+      <pubDate>Mon, 07 Oct 2024 10:28:04 +0100</pubDate>
+      <guid>http://localhost:1313/trees/fir/</guid>
+      <description>&lt;p&gt;Lorem ipsum summary of the article.&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>
