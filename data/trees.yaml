@@ -1,0 +1,15 @@
+- name: Ash
+  maxAge: 250
+  maxHeight: 35
+- name: Pine
+  maxAge: 1000
+  maxHeight: 80
+- name: Beech
+  maxAge: 300
+  maxHeight: 40
+- name: Fir
+  maxAge: 500
+  maxHeight: 60
+- name: Oak
+  maxAge: 1000
+  maxHeight: 45

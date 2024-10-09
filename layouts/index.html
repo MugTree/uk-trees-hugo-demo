@@ -8,12 +8,6 @@
     <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
   </article>
   {{ end }}
-  <!-- -->
-  {{ range (where .Site.RegularPages.ByPublishDate.Reverse "Section" "posts") }}
-  <article>
-    <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-  </article>
-  {{ end }}
 </main>
 
 {{ partial "foot.html" .}}
