@@ -14,6 +14,21 @@
         {{ .maxAge }}
     {{ end}}
 
+    <table>
+        <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Height</th>
+    </tr>
+    {{ range $trees := .Site.Data.trees }}
+    <tr>
+        <td>{{ .name }}</td>
+        <td>{{ .maxAge }}</td>
+        <td>{{ .maxHeight }}</td>
+    </tr>
+    {{ end }}
+   
+</table>
     <footer>
             <ul>
                 {{ with .PrevInSection }}<li><a href="{{ .Permalink }}">&laquo; {{ .Title }}</a></li>{{ end }}
