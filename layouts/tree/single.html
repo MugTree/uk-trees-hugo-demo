@@ -10,26 +10,8 @@
     {{.Content}}
     </article>
 
-    {{ $pages := where .Site.RegularPages "Type" "tree"  }}
-    {{ range $pages }}
-    {{ .Params.maxAge }}
-    {{ end }}
+    {{ partial "tree_data" .}}  
 
-    <table>
-        <tr>
-        <th>Name</th>
-        <th>Age</th>
-        <th>Height</th>
-    </tr>
-    {{ range $pages }}
-    <tr>
-        <td>{{ .Name }}</td>
-        <td>{{ .Params.maxAge }}</td>
-        <td>{{ .Params.maxHeight }}</td>
-    </tr>
-    {{ end }}
-   
-</table>
     <footer>
             <ul>
                 {{ with .PrevInSection }}<li><a href="{{ .Permalink }}">&laquo; {{ .Title }}</a></li>{{ end }}
