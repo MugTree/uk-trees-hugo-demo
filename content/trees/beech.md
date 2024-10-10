@@ -7,11 +7,9 @@ maxHeight = 40
 draft = false
 +++
 
-![beech tree](/images/beech.jpg "A beech tree")
-{class="foo" width="100"}
+![beech tree](/images/beech.jpg?width=300 "A beech tree")
 
 Beech trees are deciduous trees with smooth, gray bark and oval-shaped leaves with toothed edges.
-{class="standfirst"}
 
 <!--more-->
 
