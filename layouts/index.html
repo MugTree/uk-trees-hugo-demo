@@ -1,6 +1,5 @@
 {{ partial "head.html" . }}
 <main>
-  <!-- this section is populated from content/_index.md -->
   <h1>{{.Title}}</h1>
   <article>{{.Content}}</article>
   {{ range (where .Site.RegularPages.ByPublishDate.Reverse "Section" "trees") }}

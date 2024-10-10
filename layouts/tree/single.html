@@ -10,7 +10,16 @@
     {{.Content}}
     </article>
 
-    {{ partial "tree_data" .}}  
+    {{ partial "tree_data" .}} 
+    
+    {{/* show maps if avail */}}
+    {{ $data := dict }} 
+    {{ with .Resources.Get "facts.json" }} 
+        {{ $data = . |transform.Unmarshal }}
+        {{ range  $data }}
+            {{ partial "map" . }} 
+        {{ end }} 
+    {{ end }}
 
     <footer>
             <ul>
