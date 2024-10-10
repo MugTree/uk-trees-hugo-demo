@@ -1,5 +1,5 @@
 {{ $data := dict "PageName" .Title "Data" (where .Site.RegularPages "Type"
-"tree") }}
+"tree") }} {{ printf "%s" $data }}
 <table>
   <tr>
     <th>Tree</th>
