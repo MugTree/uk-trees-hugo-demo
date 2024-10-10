@@ -2,6 +2,8 @@
 date = "2024-10-07T10:28:43+01:00"
 title = "Ash"
 type = "tree"
+maxAge = 250
+maxHeight = 35
 draft = false
 summary = "This is a basic summary" 
 +++

@@ -10,9 +10,10 @@
     {{.Content}}
     </article>
 
-    {{ range where .Site.Data.trees "name" .Title  }}
-        {{ .maxAge }}
-    {{ end}}
+    {{ $pages := where .Site.RegularPages "Type" "tree"  }}
+    {{ range $pages }}
+    {{ .Params.maxAge }}
+    {{ end }}
 
     <table>
         <tr>
@@ -20,11 +21,11 @@
         <th>Age</th>
         <th>Height</th>
     </tr>
-    {{ range $trees := .Site.Data.trees }}
+    {{ range $pages }}
     <tr>
-        <td>{{ .name }}</td>
-        <td>{{ .maxAge }}</td>
-        <td>{{ .maxHeight }}</td>
+        <td>{{ .Name }}</td>
+        <td>{{ .Params.maxAge }}</td>
+        <td>{{ .Params.maxHeight }}</td>
     </tr>
     {{ end }}
    

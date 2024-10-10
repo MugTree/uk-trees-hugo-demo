@@ -2,6 +2,8 @@
 date = "2024-10-07T10:28:39+01:00"
 title = "Oak"
 type = "tree"
+maxAge = 1000
+maxHeight = 45
 draft = false
 +++
 

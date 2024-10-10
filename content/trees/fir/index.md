@@ -2,6 +2,8 @@
 date = "2024-10-07T10:28:04+01:00"
 title = "Fir"
 type = "tree"
+maxAge = 500
+maxHeight = 60
 draft = false
 +++
 
