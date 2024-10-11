@@ -1,8 +1,12 @@
 # Basic hugo site
 
-- Using markdown attributes (sparingly)
+- Using markdown attributes - add a bit of flexiblity
+  https://gohugo.io/content-management/markdown-attributes/
+
+- Tailwind CSS - speed up development
+
 - The assets folder to generate images (eventually)
-- Tailwind CSS
+
 - using the data dir
 
 ## Basic use of modules

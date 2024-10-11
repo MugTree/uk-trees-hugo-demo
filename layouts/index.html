@@ -1,11 +1,14 @@
 {{ partial "head.html" . }}
+
 <main>
-  <h1>{{.Title}}</h1>
+  <header>
+    <h1>{{.Title}}</h1>
+  </header>
+
   <article>{{.Content}}</article>
+
   {{ range (where .Site.RegularPages.ByPublishDate.Reverse "Section" "trees") }}
-  <article>
-    <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-  </article>
+  <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
   {{ end }}
 </main>
 
