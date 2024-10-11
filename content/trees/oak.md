@@ -8,8 +8,9 @@ draft = false
 summary = "This is a basic summary" 
 
 [image]
-path = "/images/trees/1.jpg"
-caption = "This is a caption"
+path = "/images/trees/2.jpg"
+caption = "Oaks shorten with age in order to extend their lifespan."
+credit = "Nature Photographers Ltd / WTML"
 +++
 
 Oak trees are deciduous or evergreen trees known for their strong wood and distinctive lobed leaves. They are long-lived and slow-growing, with a dense, durable wood that is prized for furniture, flooring, and barrels for aging wine and whiskey. Oak forests support a wide range of biodiversity, providing food and shelter for insects, birds, and mammals. Oaks have cultural significance in many societies and are often revered for their longevity and resilience.
