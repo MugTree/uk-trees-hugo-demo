@@ -14,3 +14,4 @@
 https://gohugo.io/hugo-modules/
 https://blog.hugomods.com/posts/2023/03/how-to-use-hugo-modules/
 https://discourse.gohugo.io/t/how-to-show-images-on-post-pages-if-theyre-located-in-the-assets-folder/34276
+https://gohugo.io/content-management/image-processing/

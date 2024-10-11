@@ -18,12 +18,12 @@
 # "/Users/me/Developer/hugo-sites/trees/assets/images/"
 
 # any number of dirs to add
-dirs=(tree_img)
+dirs=(trees)
 
 src="/Users/me/Developer/hugo-sites/trees/workings/"
 dst="/Users/me/Developer/hugo-sites/trees/assets/images"
 i=0
-tn_size=200
+# tn_size=200
 size=640
 
 for dir in "${dirs[@]}"; do
@@ -38,13 +38,13 @@ for dir in "${dirs[@]}"; do
         orig_height=$(identify -format "%h" "$fileName")
 
         height=$(($size * orig_height / orig_width))
-        tn_height=$(($tn_size * orig_height / orig_width))
+        # tn_height=$(($tn_size * orig_height / orig_width))
 
         echo $height
-        echo $tn_height
+        # echo $tn_height
 
         magick "$fileName" -resize ${size}x${height} $dst/$dir/$i.jpg
-        magick "$fileName" -resize ${tn_size}x${tn_height} $dst/$dir/thumbs/$i.jpg
+        # magick "$fileName" -resize ${tn_size}x${tn_height} $dst/$dir/thumbs/$i.jpg
     done
     i=0
 done
