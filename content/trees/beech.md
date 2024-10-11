@@ -5,14 +5,11 @@ type = "tree"
 maxAge = 300
 maxHeight = 40
 draft = false
+summary = "This is a basic summary" 
+
+[image]
+main = "/images/tree_img/1.jpg"
+thumbnail = "/images/tree_img/thumbs/1.jpg"
 +++
 
-![beech tree](/images/beech.jpg?width=300 "A beech tree")
-
-Beech trees are deciduous trees with smooth, gray bark and oval-shaped leaves with toothed edges.
-
-<!--more-->
-
 Beech trees are deciduous trees with smooth, gray bark and oval-shaped leaves with toothed edges. They are known for their dense, spreading canopies and often form beech forests in temperate regions. Beech wood is strong, hard, and light in color, making it suitable for furniture, flooring, and cooking utensils. Beech trees also play a vital role in forest ecosystems by providing mast (nuts) that are eaten by various animals, including deer, squirrels, and birds.
-
-<!-- https://gohugo.io/content-management/markdown-attributes/ -->
