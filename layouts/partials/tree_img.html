@@ -1,0 +1,5 @@
+{{ $img := resources.Get .Params.Image.Main }}
+<!-- improve  -->
+{{ if ne $img nil }}
+<img src="{{ (resources.Get $img).RelPermalink }}" alt="" />
+{{ end }}

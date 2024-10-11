@@ -5,6 +5,8 @@
     <h1>{{.Title}}</h1>
   </header>
 
+  {{ partial "tree_img" .}}
+
   <article>{{.Content}}</article>
 
   {{ partial "tree_data" .}} {{ partial "map" . }}

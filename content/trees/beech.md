@@ -8,7 +8,6 @@ draft = false
 summary = "This is a basic summary" 
 
 [image]
-main = "/images/tree_img/1.jpg"
 thumbnail = "/images/tree_img/thumbs/1.jpg"
 +++
 
