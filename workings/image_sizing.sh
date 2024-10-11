@@ -43,7 +43,12 @@ for dir in "${dirs[@]}"; do
         echo $height
         # echo $tn_height
 
-        magick "$fileName" -resize ${size}x${height} $dst/$dir/$i.jpg
+        # alter so this takes the filename
+
+        file=$(basename $fileName)
+        echo $file
+
+        magick "$fileName" -resize ${size}x${height} $dst/$dir/$file
         # magick "$fileName" -resize ${tn_size}x${tn_height} $dst/$dir/thumbs/$i.jpg
     done
     i=0

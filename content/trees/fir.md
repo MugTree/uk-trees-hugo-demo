@@ -8,7 +8,7 @@ draft = false
 summary = "This is a basic summary" 
 
 [image]
-path = "/images/trees/3.jpg"
+path = "/images/trees/fir.jpg"
 caption = "Fir tree against a blue sky"
 credit = "Unknown photographer"
 +++

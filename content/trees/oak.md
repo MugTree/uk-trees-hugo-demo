@@ -8,7 +8,7 @@ draft = false
 summary = "This is a basic summary" 
 
 [image]
-path = "/images/trees/2.jpg"
+path = "/images/trees/oak.jpg"
 caption = "Oaks shorten with age in order to extend their lifespan."
 credit = "Nature Photographers Ltd / WTML"
 +++

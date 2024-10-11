@@ -8,6 +8,7 @@
   <article>{{.Content}}</article>
 
   {{ range (where .Site.RegularPages.ByPublishDate.Reverse "Section" "trees") }}
+  {{ partial "thumbnail" . }}
   <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
   {{ end }}
 </main>

@@ -5,10 +5,9 @@
     <h1>{{.Title}}</h1>
   </header>
 
-  {{ partial "img" .}}
+  <p>{{ .Params.Summary }}</p>
 
-  <!-- stuff -->
-  {{ partial "thumbnail" .}}
+  {{ partial "img" .}}
 
   <article>{{.Content}}</article>
 
