@@ -6,7 +6,10 @@ maxAge = 1000
 maxHeight = 45
 draft = false
 summary = "This is a basic summary" 
-image = "/images/trees/1.jpg"
+
+[image]
+path = "/images/trees/1.jpg"
+caption = "This is a caption"
 +++
 
 Oak trees are deciduous or evergreen trees known for their strong wood and distinctive lobed leaves. They are long-lived and slow-growing, with a dense, durable wood that is prized for furniture, flooring, and barrels for aging wine and whiskey. Oak forests support a wide range of biodiversity, providing food and shelter for insects, birds, and mammals. Oaks have cultural significance in many societies and are often revered for their longevity and resilience.
