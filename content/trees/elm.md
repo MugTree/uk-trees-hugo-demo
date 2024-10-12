@@ -5,7 +5,7 @@ type = "tree"
 maxAge = 500
 maxHeight = 30
 draft = false
-summary = "This is a basic summary" 
+summary = "Elm trees are a group of deciduous trees known for their broad, arching canopies and serrated, oval-shaped leaves." 
 
 [image]
 path = "/images/trees/elm.jpg"

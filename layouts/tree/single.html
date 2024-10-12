@@ -1,29 +1,27 @@
 {{ partial "head.html" . }}
 
-<main>
-  <header>
-    <h1>{{.Title}}</h1>
-  </header>
+<header>
+  <h1>{{.Title}}</h1>
+</header>
 
-  <p>{{ .Params.Summary }}</p>
+<p>{{ .Params.Summary }}</p>
 
-  {{ partial "img" .}}
+{{ partial "img" .}}
 
-  <article>{{.Content}}</article>
+<article>{{.Content}}</article>
 
-  {{ partial "tree_data" .}} {{ partial "map" . }}
+{{ partial "tree_data" .}} {{ partial "map" . }}
 
-  <ul>
-    {{ with .PrevInSection }}
-    <li><a href="{{ .Permalink }}">&laquo; {{ .Title }}</a></li>
-    {{ end }} {{ with .NextInSection }}
-    <li><a href="{{ .Permalink }}">{{ .Title }} &raquo;</a></li>
-    {{ end }}
-  </ul>
+<ul>
+  {{ with .PrevInSection }}
+  <li><a href="{{ .Permalink }}">&laquo; {{ .Title }}</a></li>
+  {{ end }} {{ with .NextInSection }}
+  <li><a href="{{ .Permalink }}">{{ .Title }} &raquo;</a></li>
+  {{ end }}
+</ul>
 
-  <ul>
-    <li><a href="{{ .Site.BaseURL }}">Home</a></li>
-  </ul>
-</main>
+<ul>
+  <li><a href="{{ .Site.BaseURL }}">Home</a></li>
+</ul>
 
 {{ partial "foot.html" .}}

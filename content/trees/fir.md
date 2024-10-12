@@ -5,7 +5,7 @@ type = "tree"
 maxAge = 500
 maxHeight = 60
 draft = false
-summary = "This is a basic summary" 
+summary = "Fir trees are tall, coniferous evergreens with needle-like leaves attached singly to the branches. " 
 
 [image]
 path = "/images/trees/fir.jpg"

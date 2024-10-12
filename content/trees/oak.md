@@ -5,7 +5,7 @@ type = "tree"
 maxAge = 1000
 maxHeight = 45
 draft = false
-summary = "This is a basic summary" 
+summary = "Oak trees are deciduous or evergreen trees known for their strong wood and distinctive lobed leaves." 
 
 [image]
 path = "/images/trees/oak.jpg"

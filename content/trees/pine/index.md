@@ -5,7 +5,7 @@ type = "tree"
 maxAge = 1000
 maxHeight = 80
 draft = false
-summary = "This is a basic summary"
+summary = "Pine trees are evergreen conifers characterized by their needle-like leaves bundled in clusters called fascicles. "
 
 [image]
 path = "/images/trees/pine.jpg"

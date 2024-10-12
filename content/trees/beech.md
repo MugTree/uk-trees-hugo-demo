@@ -5,7 +5,7 @@ type = "tree"
 maxAge = 300
 maxHeight = 40
 draft = false
-summary = "This is a basic summary" 
+summary = "Beech trees are deciduous trees with smooth, gray bark and oval-shaped leaves with toothed edges. " 
 
 [image]
 path = "/images/trees/beech.jpg"

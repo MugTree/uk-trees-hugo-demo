@@ -5,7 +5,7 @@ type = "tree"
 maxAge = 250
 maxHeight = 35
 draft = false
-summary = "This is a basic summary" 
+summary = "Ash trees are known for their graceful appearance and compound leaves consisting of several leaflets." 
 
 [image]
 path = "/images/trees/ash.jpg"

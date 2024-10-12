@@ -1,23 +1,21 @@
 {{ partial "head.html" . }}
 
-<main>
-  <header>
-    <h1>All Trees</h1>
-  </header>
+<header>
+  <h1>All Trees</h1>
+</header>
 
-  <article>
-    <ul>
-      {{ range where .Pages.ByPublishDate.Reverse "Section" "trees" }}
-      <li><a href="{{ .RelPermalink }}">{{ .Title }} </a></li>
-      {{ end }}
-    </ul>
-  </article>
-
-  <h2>Other links</h2>
-
+<article>
   <ul>
-    <li><a href="{{ .Site.BaseURL }}">Home</a></li>
+    {{ range where .Pages.ByPublishDate.Reverse "Section" "trees" }}
+    <li><a href="{{ .RelPermalink }}">{{ .Title }} </a></li>
+    {{ end }}
   </ul>
-</main>
+</article>
+
+<h2>Other links</h2>
+
+<ul>
+  <li><a href="{{ .Site.BaseURL }}">Home</a></li>
+</ul>
 
 {{ partial "foot.html" .}}
