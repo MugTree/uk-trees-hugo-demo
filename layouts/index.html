@@ -4,7 +4,7 @@
   <h1>{{.Title}}</h1>
 </header>
 
-<article>{{.Content}}</article>
+{{.Content}}
 
 {{ range (where .Site.RegularPages.ByPublishDate.Reverse "Section" "trees") }}
 <div>

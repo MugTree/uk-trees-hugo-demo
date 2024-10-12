@@ -3,13 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="color-scheme" content="light dark">
     <title>{{ .Page.Title }}</title>
-
-    {{ $styles := resources.Get "/css/style.css" }} {{ if .Site.IsServer }}
+    {{ $styles := resources.Get "/css/pico.css" }} {{ if .Site.IsServer }}
     <link rel="stylesheet" href="{{ $styles.RelPermalink }}" />
     {{ else }} {{ $styles := $styles | minify }}
     <link rel="stylesheet" href="{{ $styles.RelPermalink }}" />
     {{ end }}
   </head>
   <body>
-<div class="">
+    <main class="container">
