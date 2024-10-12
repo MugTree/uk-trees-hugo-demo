@@ -1,0 +1,42 @@
+1.For each of the following British Trees (Ash, Oak), create me a TOML file. 
+2. The TOML files have the follwing structure
+
+# file start..
++++
+date = "{{ DATE}}"
+title = "{{ TREE_NAME }}"
+type = "tree"
+maxAge = "{{ ESTIMATED_MAX_AGE_OF_TREE }}"
+maxHeight = "{{ ESTIMATED_MAX_HEIGHT_OF_TREE }}"
+draft = true
+summary = {{ SUMMARY }}
+
+[image]
+path = "/images/trees/{{ TREE_NAME_LOWERCASE }}.jpg"
+caption = "{{ FAKE_NAME }}"
+credit = "{{ FAKE_CAPTION }}"
++++
+
+{{ THREE PARAGRAPHS APPROXIMATELY 300 WORDS }}
+
+# file end...
+
+3. The {{ DATE }} placeholder needs to be todays date in this format "YYYY-MM-DDT10:28:43+01:00". 
+4. {{ ESTIMATED_MAX_AGE_OF_TREE }} and {{ ESTIMATED_MAX_HEIGHT_OF_TREE }} need to be numbers eg. 25, 100.
+5. {{ SUMMARY }} needs to follow the {{ THREE PARAGRAPHS APPROXIMATELY 300 WORDS }} 
+5. write the files back to the screen.
+
+
+===========================================================
+
+1. For each of the following British Trees (Ash, Oak) could you create me a JSON file with an array of objects.
+2. The objects contain a questin and answer - and look like so
+
+{
+    "question": {{ A_QUESTION_ABOUT_THE_TREE_TYPE }},
+    "answer": {{ AN_ANSWER_TO_THE_QUESTION }}
+}
+
+3. Once you have between four and six objects add them to an array literal please.
+
+3. Write these files back to the screen.
