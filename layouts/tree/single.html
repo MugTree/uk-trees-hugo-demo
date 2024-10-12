@@ -6,11 +6,8 @@
 
 <p>{{ .Params.Summary }}</p>
 
-{{ partial "img" .}}
-
-<article>{{.Content}}</article>
-
-{{ partial "tree_data" .}} {{ partial "map" . }}
+{{ partial "img" .}} {{.Content}} {{ partial "tree_data" .}} {{ partial "map" .
+}}
 
 <ul>
   {{ with .PrevInSection }}
