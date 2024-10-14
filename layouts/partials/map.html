@@ -1,7 +1,32 @@
-{{/* show maps if avail */}} {{ $data := dict }} {{ with .Resources.Get
-"facts.json" }} {{ $data = . | transform.Unmarshal }} {{ range $data }}
-<div class="map">
-  <h3>{{ .name }}</h3>
-  <div>{{ .coords }}</div>
-</div>
-{{ end }} {{ end }}
+{{ $m := .Resources.Get "map.json"}} {{ if ne $m nil }}
+
+<article>
+  <header>
+    <h3 style="margin: 12px 0">{{ .Name}} trees of interest</h3>
+  </header>
+  <div
+    id="map"
+    style="width: 600px; height: 400px; position: relative"
+    class="leaflet-container leaflet-touch leaflet-retina leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom"
+    tabindex="0"
+  >
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      crossorigin=""
+    ></script>
+    <script>
+
+      let markers = {{ $m | transform.Unmarshal }};
+    </script>
+
+    {{ $map := resources.Get "/javascript/map.js"}}
+
+    <script src="{{ $map.RelPermalink }}"></script>
+  </div>
+</article>
+{{ end }}

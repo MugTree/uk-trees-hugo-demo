@@ -4,14 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="color-scheme" content="light dark" />
-    <title>{{ .Page.Title }}</title>
+    <title>{{ .Site.Title }} - {{ .Page.Title }}</title>
+    <!-- extras -->
     {{ $styles := resources.Get "/css/pico.css" }} {{ if .Site.IsServer }}
+
     <link rel="stylesheet" href="{{ $styles.RelPermalink }}" />
+
     {{ else }} {{ $styles := $styles | minify }}
     <link rel="stylesheet" href="{{ $styles.RelPermalink }}" />
+    {{ end }} {{ $styles2 := resources.Get "/css/basics.css" }} {{ if
+    .Site.IsServer }}
+
+    <link rel="stylesheet" href="{{ $styles2.RelPermalink }}" />
+
+    {{ else }} {{ $styles2 := $styles2 | minify }}
+    <link rel="stylesheet" href="{{ $styles2.RelPermalink }}" />
+
     {{ end }}
   </head>
   <body>
     <main class="container">
-      <header><a href="{{ .Site.BaseURL }}">UK Trees</a></header>
+      <header>
+        <span style="font-size: 21px; font-weight: bold"
+          ><a class="secondary" href="{{ .Site.BaseURL }}">UK Trees </a></span
+        ><span style="font-size: 24px">🌿</span>
+      </header>
       <hr />

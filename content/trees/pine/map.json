@@ -1,4 +1,12 @@
 [
-  { "tag": "The oldest example", "coords": [120, 120] },
-  { "tag": "The tallest example", "coords": [24, 24] }
+  {
+    "name": "The oldest Pine",
+    "latitude": 55.8642,
+    "longitude": -4.2518
+  },
+  {
+    "name": "The tallest Pine",
+    "latitude": 50.7184,
+    "longitude": -3.5339
+  }
 ]

@@ -1,0 +1,15 @@
+.grid-item {
+  text-align: center;
+}
+
+.clear {
+  clear: both;
+}
+
+/* fix for buttons on map*/
+.leaflet-control-zoom a[role="button"] {
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  outline: 0;
+}

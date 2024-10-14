@@ -3,6 +3,7 @@
 - Pico CSS speed up development
 - Basic use of templates and partials
 - Content created by AI (CGPT) and added to content folder (content.md and qanda.json)
+- Images initially resized using ImageMagik - see workings dir
 
 ## Basic use of modules
 
@@ -13,8 +14,8 @@ https://gohugo.io/content-management/image-processing/
 
 ## Todo
 
-- [] image sizing
-- [] table sort
+- [] sizing for screen sizes - media queries
+- [] basic js table sort - add data attributes
 - [] Using markdown attributes - add a bit of flexiblity
   https://gohugo.io/content-management/markdown-attributes/
 - [] Add a robots.txt to keep out of indexes

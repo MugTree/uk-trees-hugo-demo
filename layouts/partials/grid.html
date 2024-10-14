@@ -1,11 +1,11 @@
 <div class="grid">
   {{ range . }}
-  <div>
+  <div class="grid-item">
     <a href="{{ .RelPermalink }}">{{ partial "grid_thumb" . }}</a>
-    <h2>
+    <h2 class="grid-head">
       <a href="{{ .RelPermalink }}">{{ .Title }}</a>
     </h2>
-    <p>{{ .Params.Summary }}</p>
+    <p class="grid-content">{{ .Params.Summary }}</p>
   </div>
   {{ end }}
 </div>

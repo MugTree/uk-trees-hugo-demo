@@ -6,6 +6,7 @@
   {{ partial "img" .}}
   <p>{{ .Params.Summary }}</p>
   {{.Content}}
+  <div class="clear"></div>
 </section>
 
 <section>
@@ -13,10 +14,13 @@
   {{ partial "tree_data" .}}
 </section>
 
-<section style="padding-top: 24px">
-  <h2>Questions about {{ .Name}} trees</h2>
+<article>
+  <header>
+    <h3 style="margin: 12px 0">Questions about {{ .Name}} trees</h3>
+  </header>
   {{ partial "qa" . }}
-</section>
+</article>
+
 {{ partial "map" . }}
 
 <ul>
