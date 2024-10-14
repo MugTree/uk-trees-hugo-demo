@@ -10,18 +10,19 @@
 </section>
 
 <section>
-  <h2>{{ .Name }} trees in context</h2>
-  {{ partial "tree_data" .}}
+  <div>
+    <h2>{{ .Name }} trees in context</h2>
+  </div>
+  <div class="grid">
+    <div>{{ partial "tree_data" .}}</div>
+    <div>{{ partial "map" . }}</div>
+  </div>
 </section>
 
-<article>
-  <header>
-    <h3 style="margin: 12px 0">Questions about {{ .Name}} trees</h3>
-  </header>
-  {{ partial "qa" . }}
-</article>
+<h3 style="margin: 12px 0">Questions about {{ .Name}} trees</h3>
+<hr />
 
-{{ partial "map" . }}
+{{ partial "qa" . }}
 
 <ul>
   {{ with .PrevInSection }}
