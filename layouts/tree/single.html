@@ -1,13 +1,25 @@
 {{ partial "head.html" . }}
 
-<header>
-  <h1>{{.Title}}</h1>
-</header>
+<h1>{{.Title}}</h1>
 
-<p>{{ .Params.Summary }}</p>
+<section>
+  {{ partial "img" .}}
 
-{{ partial "img" .}} {{.Content}} {{ partial "tree_data" .}} {{ partial "map" .
-}}
+  <p>{{ .Params.Summary }}</p>
+
+  {{.Content}}
+</section>
+
+<section>
+  <h2>Facts</h2>
+
+  {{ partial "tree_data" .}}
+</section>
+<section>
+  <h3>Q&A</h3>
+  {{ partial "qa" . }}
+</section>
+{{ partial "map" . }}
 
 <ul>
   {{ with .PrevInSection }}

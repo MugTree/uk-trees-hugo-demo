@@ -1,16 +1,20 @@
 {{ $data := dict "PageName" .Title "Data" (where .Site.RegularPages "Type"
 "tree") }}
-<table>
-  <tr>
-    <th>Tree</th>
-    <th>Max Age</th>
-    <th>Max Height</th>
-  </tr>
-  {{ range $data.Data}}
-  <tr class="{{ if eq $data.PageName .Title -}} selected {{- end}}">
-    <td>{{ .Title }}</td>
-    <td>{{ .Params.maxAge }}</td>
-    <td>{{ .Params.maxHeight }}</td>
-  </tr>
-  {{ end }}
+<table class="striped">
+  <thead>
+    <tr>
+      <th>Tree</th>
+      <th>Max Age</th>
+      <th>Max Height</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{ range $data.Data}}
+    <tr class="{{ if eq $data.PageName .Title -}} selected {{- end}}">
+      <td>{{ .Title }}</td>
+      <td>{{ .Params.maxAge }}</td>
+      <td>{{ .Params.maxHeight }}</td>
+    </tr>
+    {{ end }}
+  </tbody>
 </table>

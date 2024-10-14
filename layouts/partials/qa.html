@@ -1,0 +1,9 @@
+{{ $data := dict }} {{ $path := "qa.json" }} {{ with .Resources.Get $path }} {{
+with . | transform.Unmarshal }} {{ $data = . }} {{ range $data}}
+<details>
+  <summary><b>{{.question }}</b></summary>
+  <p>{{ .answer }}</p>
+</details>
+<hr />
+{{ end }} {{ end }} {{ else }} {{ errorf "Unable to get page resource %q" $path
+}} {{ end }}
