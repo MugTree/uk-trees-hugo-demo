@@ -11,6 +11,7 @@ summary = "The ash tree is a common species found across the UK, known for its e
 path = "/images/trees/ash.jpg"
 caption = "Bench under a two-tone ash tree"
 credit = "Jeffrey Hamilton"
+url = "https://unsplash.com/@pistos"
 +++
 
 The ash tree (Fraxinus excelsior) is one of the most prominent deciduous trees in the UK, recognized by its pinnate leaves and distinctive black buds. It is native to Europe and plays a critical role in supporting local biodiversity, providing habitat for various insects, birds, and fungi. Ash trees are also famous for their rapid growth, often reaching heights of up to 35 meters.

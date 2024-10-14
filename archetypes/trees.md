@@ -11,6 +11,7 @@ summary = "This is a basic summary"
 path = "/images/trees/1.jpg"
 caption = "some caption"
 credit = "Unknown photographer"
+url = "url"
 +++
 
 Lorem ipsum summary of the article.

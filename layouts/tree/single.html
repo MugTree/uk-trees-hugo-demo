@@ -4,19 +4,17 @@
 
 <section>
   {{ partial "img" .}}
-
   <p>{{ .Params.Summary }}</p>
-
   {{.Content}}
 </section>
 
 <section>
-  <h2>Facts</h2>
-
+  <h2>{{ .Name }} trees in context</h2>
   {{ partial "tree_data" .}}
 </section>
-<section>
-  <h3>Q&A</h3>
+
+<section style="padding-top: 24px">
+  <h2>Questions about {{ .Name}} trees</h2>
   {{ partial "qa" . }}
 </section>
 {{ partial "map" . }}

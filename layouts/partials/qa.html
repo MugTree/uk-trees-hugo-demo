@@ -1,7 +1,7 @@
 {{ $data := dict }} {{ $path := "qa.json" }} {{ with .Resources.Get $path }} {{
 with . | transform.Unmarshal }} {{ $data = . }} {{ range $data}}
 <details>
-  <summary><b>{{.question }}</b></summary>
+  <summary>{{.question }}</summary>
   <p>{{ .answer }}</p>
 </details>
 <hr />

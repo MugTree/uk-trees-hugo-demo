@@ -2,13 +2,16 @@
 
 <h1>{{.Title}}</h1>
 
-{{.Content}} {{ range (where .Site.RegularPages.ByPublishDate.Reverse "Section"
-"trees") }}
-<div>
-  <a href="{{ .RelPermalink }}">{{ partial "thumbnail" . }}</a>
-  <h2>
-    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-  </h2>
-  <p>{{ .Params.Summary }}</p>
-</div>
-{{ end }} {{ partial "foot.html" .}}
+<section>{{.Content}}</section>
+
+<section>
+  {{ $first := first 3 (where .Site.RegularPages.ByPublishDate.Reverse "Section"
+  "trees") }} {{ partial "grid" $first}}
+</section>
+
+<section>
+  {{ $last := last 3 (where .Site.RegularPages.ByPublishDate.Reverse "Section"
+  "trees") }} {{ partial "grid" $last}}
+</section>
+
+{{ partial "foot.html" .}}

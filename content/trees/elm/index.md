@@ -10,7 +10,8 @@ summary = "The elm tree, once a common sight in Britain, has suffered greatly du
 [image]
 path = "/images/trees/elm.jpg"
 caption = "The Graceful Elm"
-credit = "Photograph by Woodland Moments"
+credit = "Hans"
+url = "https://pixabay.com/users/hans-2/"
 +++
 
 The elm tree (Ulmus) was once one of the most widespread trees in Britain, known for its distinctive vase-like shape and serrated leaves. Elms can grow up to 35 meters tall and live for hundreds of years. However, in the 20th century, the species was devastated by Dutch elm disease, caused by a fungus spread by bark beetles, which killed millions of trees across Europe and North America.

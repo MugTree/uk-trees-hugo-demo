@@ -24,7 +24,7 @@ src="/Users/me/Developer/hugo-sites/trees/workings/"
 dst="/Users/me/Developer/hugo-sites/trees/assets/images"
 i=0
 # tn_size=200
-size=340
+size=400
 
 for dir in "${dirs[@]}"; do
 

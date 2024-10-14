@@ -11,6 +11,7 @@ summary = "Fir trees, towering conifers, are commonly found in upland areas of t
 path = "/images/trees/fir.jpg"
 caption = "Little river in between fir trees in the mountains"
 credit = "Daniel Diemer"
+url = "https://unsplash.com/photos/a-river-running-through-a-lush-green-forest-EKTu-nqGTpY?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
 +++
 
 Fir trees (Abies) are some of the tallest and most majestic coniferous trees found in the UK, reaching heights of up to 60 meters. They are evergreen, maintaining their foliage year-round, and are easily recognized by their conical shape, straight trunks, and soft needle-like leaves. Fir trees are commonly found in cooler, upland regions, thriving in Scotland’s forests and other mountainous areas.

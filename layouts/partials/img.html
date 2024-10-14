@@ -1,9 +1,11 @@
-{{ $img := resources.Get .Params.Image.Path }}
-<!-- improve  -->
-{{ if ne $img nil }}
-
-<figure style="float: right; margin: 0 0 0 12px">
+{{ $img := resources.Get .Params.Image.Path }} {{ if ne $img nil }}
+<figure style="float: right; margin: 0 0 0 24px">
   <img src="{{ $img.RelPermalink }}" alt="" />
-  <figcaption>Image from {{ .Params.Image.Credit }}</figcaption>
+  <figcaption>
+    Image by
+    <a href="{{ .Params.Image.Url }}" class="secondary"
+      >{{ .Params.Image.Credit }}</a
+    >
+  </figcaption>
 </figure>
 {{ end }}

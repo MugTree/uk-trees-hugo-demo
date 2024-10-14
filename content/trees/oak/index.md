@@ -11,6 +11,7 @@ summary = "The oak tree is one of the most iconic trees in Britain, known for it
 path = "/images/trees/oak.jpg"
 caption = "Tree on a mountain plain"
 credit = "Nikola Knezevic"
+url = "https://unsplash.com/@nknezevic"
 +++
 
 The oak tree (Quercus robur) is a symbol of strength and endurance in the UK, often living for over 500 years, with some trees reaching ages of over 1,000 years. Oaks are a keystone species in British woodlands, supporting a vast array of wildlife, from insects to birds and mammals. Standing tall at up to 40 meters, the oak is instantly recognizable by its broad canopy and deeply grooved bark.

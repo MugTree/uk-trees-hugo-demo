@@ -1,17 +1,26 @@
+<style>
+  .selected {
+    text-decoration: underline;
+  }
+</style>
 {{ $data := dict "PageName" .Title "Data" (where .Site.RegularPages "Type"
 "tree") }}
 <table class="striped">
   <thead>
     <tr>
       <th>Tree</th>
-      <th>Max Age</th>
-      <th>Max Height</th>
+      <th>Max Age (years)</th>
+      <th>Max Height (metres)</th>
     </tr>
   </thead>
   <tbody>
     {{ range $data.Data}}
-    <tr class="{{ if eq $data.PageName .Title -}} selected {{- end}}">
-      <td>{{ .Title }}</td>
+    <tr>
+      <td>
+        <span class="{{ if eq $data.PageName .Title -}} selected {{- end}}"
+          >{{ .Title }}</span
+        >
+      </td>
       <td>{{ .Params.maxAge }}</td>
       <td>{{ .Params.maxHeight }}</td>
     </tr>

@@ -1,4 +1,4 @@
 {{ $img := resources.Get .Params.Image.Path }} {{ if ne $img nil }} {{ $img :=
-$img.Crop "100x100" }}
+$img.Crop "300x120" }}
 <img src="{{ $img.RelPermalink }}" alt="" />
 {{ end }}

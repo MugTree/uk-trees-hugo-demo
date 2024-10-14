@@ -11,6 +11,7 @@ summary = "The beech tree, with its smooth grey bark and sprawling branches, is 
 path = "/images/trees/beech.jpg"
 caption = "Ancient Beech tree in the early morning"
 credit = "Richard Loader"
+url = "https://unsplash.com/@fhfpix"
 +++
 
 The beech tree (Fagus sylvatica) is one of Britain’s most beautiful deciduous trees, known for its smooth, silver-grey bark and spreading canopy. Reaching heights of up to 40 meters, beech trees can live for around 350 years. In autumn, they are particularly striking, with their leaves turning vibrant shades of orange and brown, making them a favourite among nature lovers.
