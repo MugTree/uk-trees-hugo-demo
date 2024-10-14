@@ -14,7 +14,7 @@
     </tr>
   </thead>
   <tbody>
-    {{ range $data.Data}}
+    {{ range sort $data.Data ".Params.maxAge" "desc" }}
     <tr>
       <td>
         <span class="{{ if eq $data.PageName .Title -}} selected {{- end}}"

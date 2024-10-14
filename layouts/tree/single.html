@@ -4,7 +4,7 @@
 
 <section>
   {{ partial "img" .}}
-  <p>{{ .Params.Summary }}</p>
+  <p><em>{{ .Params.Summary }}</em></p>
   {{.Content}}
   <div class="clear"></div>
 </section>
@@ -19,21 +19,20 @@
   </div>
 </section>
 
-<h3 style="margin: 12px 0">Questions about {{ .Name}} trees</h3>
-<hr />
+<section>
+  <h3 class="spacer">Questions about {{ .Name}} trees</h3>
+  <hr />
+  {{ partial "qa" . }}
+</section>
 
-{{ partial "qa" . }}
-
-<ul>
-  {{ with .PrevInSection }}
-  <li><a href="{{ .Permalink }}">&laquo; {{ .Title }}</a></li>
-  {{ end }} {{ with .NextInSection }}
-  <li><a href="{{ .Permalink }}">{{ .Title }} &raquo;</a></li>
-  {{ end }}
-</ul>
-
-<ul>
-  <li><a href="{{ .Site.BaseURL }}">Home</a></li>
-</ul>
+<section>
+  <h4 class="spacer">Other trees</h4>
+  <div class="grid">
+    {{ $other := where .Site.RegularPages "Title" "ne" .Name }} {{ range
+    $other}}
+    <div><a href="{{ .RelPermalink}}">{{ .Title }}</a></div>
+    {{ end }}
+  </div>
+</section>
 
 {{ partial "foot.html" .}}

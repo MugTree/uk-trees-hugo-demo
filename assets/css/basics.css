@@ -6,6 +6,10 @@
   clear: both;
 }
 
+.spacer {
+  padding: 12px 0;
+}
+
 /* fix for buttons on map*/
 .leaflet-control-zoom a[role="button"] {
   padding: 0;

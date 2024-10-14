@@ -4,14 +4,16 @@
 
 <hr />
 
-<section>{{.Content}}</section>
-
 <section>
+  <p><em>{{.Content}}</em></p>
+</section>
+
+<section class="spacer">
   {{ $first := first 3 (where .Site.RegularPages.ByPublishDate.Reverse "Section"
   "trees") }} {{ partial "grid" $first}}
 </section>
 
-<section>
+<section class="spacer">
   {{ $last := last 3 (where .Site.RegularPages.ByPublishDate.Reverse "Section"
   "trees") }} {{ partial "grid" $last}}
 </section>
