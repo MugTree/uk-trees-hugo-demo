@@ -1,4 +1,9 @@
 {{ $img := resources.Get .Params.Image.Path }} {{ if ne $img nil }} {{ $img :=
 $img.Crop "400x160" }}
-<img class="grid-img" src="{{ $img.RelPermalink }}" alt="" />
+<img
+  loading="lazy"
+  width="400px"
+  class="grid-img"
+  src="{{ $img.RelPermalink }}"
+/>
 {{ end }}
