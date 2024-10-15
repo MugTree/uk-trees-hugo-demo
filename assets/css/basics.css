@@ -47,6 +47,14 @@
   }
 }
 
+@media (max-width: 900px) {
+  .main-img {
+    float: none;
+    margin: 0 auto 0 auto;
+    width: 400px;
+  }
+}
+
 .selected {
   text-decoration: underline;
 }
