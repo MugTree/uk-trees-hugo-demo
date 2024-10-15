@@ -1,11 +1,12 @@
 [
   {
-    "name": "The oldest Ash",
+    "name": "Oldest - London, England",
+
     "latitude": 51.5074,
     "longitude": -0.1278
   },
   {
-    "name": "The tallest Ash",
+    "name": "Tallest - Edinburgh, Scotland",
     "latitude": 55.9533,
     "longitude": -3.1883
   }
