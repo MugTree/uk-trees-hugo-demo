@@ -1,6 +1,6 @@
 {{ $img := resources.Get .Params.Image.Path }} {{ if ne $img nil }}
 <figure class="main-img">
-  <img loading="lazy" width="400px" src="{{ $img.RelPermalink }}" alt="" />
+  <img loading="lazy" width="340px" src="{{ $img.RelPermalink }}" alt="" />
   <figcaption class="caption">
     Image by
     <a href="{{ .Params.Image.Url }}" class="secondary"
