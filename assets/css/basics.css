@@ -55,7 +55,10 @@
   .main-img {
     float: none;
     margin: 0 auto 0 auto;
-    width: 400px;
+    width: 340px;
+  }
+  details summary {
+    line-height: 1.5rem;
   }
 }
 
