@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+.grid-head {
+  padding: 12px 0;
+}
+
 .clear {
   clear: both;
 }
@@ -57,4 +61,11 @@
 
 .selected {
   text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+}
+header {
+  padding: 24px 0;
 }

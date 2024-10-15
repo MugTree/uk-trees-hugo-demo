@@ -29,12 +29,12 @@
 
 <section>
   <h4 class="spacer">Other trees</h4>
-  <div class="grid">
+  <ul>
     {{ $other := where .Site.RegularPages "Title" "ne" .Name }} {{ range
     $other}}
-    <div><a href="{{ .RelPermalink}}">{{ .Title }}</a></div>
+    <li><a href="{{ .RelPermalink}}">{{ .Title }}</a></li>
     {{ end }}
-  </div>
+  </ul>
 </section>
 
 {{ partial "foot.html" .}}
