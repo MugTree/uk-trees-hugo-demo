@@ -4,6 +4,8 @@ title = "Fir"
 type = "tree"
 maxAge = "500"
 maxHeight = "60"
+latin = "Abies species"
+approxNumber = "1 million"
 draft = false
 summary = "Fir trees, towering conifers, are commonly found in upland areas of the UK. Known for their symmetrical shape and evergreen foliage, they are a staple of British woodlands and a symbol of endurance in colder climates."
 

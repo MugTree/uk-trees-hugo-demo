@@ -1,32 +1,31 @@
 {{ $m := .Resources.Get "map.json"}} {{ if ne $m nil }}
-<div>
-  <div
-    id="map"
-    style="
-      width: 360px;
-      height: 360px;
-      position: relative;
-      margin: 24px auto 0 auto;
-    "
-    class="leaflet-container leaflet-touch leaflet-retina leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom"
-    tabindex="0"
-  >
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-      crossorigin=""
-    />
-    <script
-      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-      crossorigin=""
-    ></script>
-    <script>
-      let markers = {{ $m | transform.Unmarshal }};
-    </script>
+<div
+  id="map"
+  style="
+    width: 400px;
+    height: 400px;
+    position: relative;
+    margin: 24px auto 0 auto;
+  "
+  class="leaflet-container leaflet-touch leaflet-retina leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom"
+  tabindex="0"
+>
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    crossorigin=""
+  />
+  <script
+    src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    crossorigin=""
+  ></script>
+  <script>
+    let markers = {{ $m | transform.Unmarshal }};
+  </script>
 
-    {{ $map := resources.Get "/javascript/map.js"}}
+  {{ $map := resources.Get "/javascript/map.js"}}
 
-    <script src="{{ $map.RelPermalink }}"></script>
-  </div>
+  <script src="{{ $map.RelPermalink }}"></script>
 </div>
+<p class="caption">{{ .Title }} trees in the UK</p>
 {{ end }}

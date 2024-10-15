@@ -4,6 +4,8 @@ title = "Pine"
 type = "tree"
 maxAge = "500"
 maxHeight = "45"
+latin = "Pinus species"
+approxNumber = "100 million"
 draft = false
 summary = "The Pine tree is a resilient conifer known for its long lifespan and towering height. Native to many parts of the UK, pines thrive in a variety of soils and climates, making them a versatile and vital component of British forests."
 

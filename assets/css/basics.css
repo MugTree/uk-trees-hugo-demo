@@ -17,3 +17,36 @@
   border-radius: 0;
   outline: 0;
 }
+
+.databox {
+  display: flex;
+  flex-direction: row;
+}
+
+.databox .left {
+  padding-right: 24px;
+  flex-grow: 3;
+}
+
+.caption {
+  text-align: center;
+  padding-top: 10.5px;
+}
+
+.main-img {
+  float: right;
+  margin: 0 0 0 24px;
+}
+
+@media (max-width: 1300px) {
+  .databox {
+    display: block;
+  }
+  .databox .right {
+    padding: 24px 0;
+  }
+}
+
+.selected {
+  text-decoration: underline;
+}

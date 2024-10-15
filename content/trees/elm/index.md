@@ -4,6 +4,8 @@ title = "Elm"
 type = "tree"
 maxAge = "400"
 maxHeight = "35"
+latin = "Ulmus species"
+approxNumber = "10 thousand"
 draft = false
 summary = "The elm tree, once a common sight in Britain, has suffered greatly due to Dutch elm disease. However, it remains a beloved species for its height and graceful shape, and efforts are being made to restore its presence in the landscape."
 

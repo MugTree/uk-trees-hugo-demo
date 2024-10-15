@@ -1,8 +1,3 @@
-<style>
-  .selected {
-    text-decoration: underline;
-  }
-</style>
 {{ $data := dict "PageName" .Title "Data" (where .Site.RegularPages "Type"
 "tree") }}
 <table class="striped">
@@ -11,6 +6,7 @@
       <th>Tree</th>
       <th>Max Age (years)</th>
       <th>Max Height (metres)</th>
+      <th>Estimated number</th>
     </tr>
   </thead>
   <tbody>
@@ -23,6 +19,7 @@
       </td>
       <td>{{ .Params.maxAge }}</td>
       <td>{{ .Params.maxHeight }}</td>
+      <td>{{ .Params.approxNumber }}</td>
     </tr>
     {{ end }}
   </tbody>

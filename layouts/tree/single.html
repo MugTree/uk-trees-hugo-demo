@@ -1,6 +1,8 @@
 {{ partial "head.html" . }}
 
-<h1>{{.Title}}</h1>
+<h1>{{.Title}} - ({{ .Params.Latin }})</h1>
+
+<hr />
 
 <section>
   {{ partial "img" .}}
@@ -13,9 +15,9 @@
   <div>
     <h2>{{ .Name }} trees in context</h2>
   </div>
-  <div class="grid">
-    <div>{{ partial "tree_data" .}}</div>
-    <div>{{ partial "map" . }}</div>
+  <div class="databox">
+    <div class="left">{{ partial "tree_data" .}}</div>
+    <div class="right">{{ partial "map" . }}</div>
   </div>
 </section>
 

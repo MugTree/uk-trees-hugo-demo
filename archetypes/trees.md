@@ -4,6 +4,8 @@ title = "{{ replace .Name "-" " " | title }}"
 type = "tree"
 maxAge = 1
 maxHeight = 1
+latin = ""
+approxNumber = ""
 draft = true
 summary = "This is a basic summary" 
 

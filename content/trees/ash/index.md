@@ -4,6 +4,8 @@ title = "Ash"
 type = "tree"
 maxAge = "250"
 maxHeight = "35"
+latin = "Fraxinus excelsior"
+approxNumber = "80 million"
 draft = false
 summary = "The ash tree is a common species found across the UK, known for its elegant leaves and strong, flexible wood. It can live for hundreds of years, reaching impressive heights. In British folklore, the ash tree has long been associated with protection and healing."
 

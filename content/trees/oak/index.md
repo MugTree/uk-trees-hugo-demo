@@ -4,6 +4,8 @@ title = "Oak"
 type = "tree"
 maxAge = "1000"
 maxHeight = "40"
+latin = "Quercus species"
+approxNumber = "120 million"
 draft = false
 summary = "The oak tree is one of the most iconic trees in Britain, known for its longevity and strength. It has been a symbol of endurance and wisdom in British culture for centuries, and its wood is highly valued for its durability."
 

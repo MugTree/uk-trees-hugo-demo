@@ -4,6 +4,8 @@ title = "Beech"
 type = "tree"
 maxAge = "350"
 maxHeight = "40"
+latin = "Fagus sylvatica"
+approxNumber = "10 million"
 draft = false
 summary = "The beech tree, with its smooth grey bark and sprawling branches, is a common sight in British woodlands. Known for its vibrant autumn colours, the beech is a symbol of wisdom and longevity in British culture."
 
