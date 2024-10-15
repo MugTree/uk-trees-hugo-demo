@@ -22,13 +22,13 @@
 </section>
 
 <section>
-  <h3 class="spacer">Questions about {{ .Name}} trees</h3>
+  <h2 class="spacer">Questions about {{ .Name}} trees</h2>
   <hr />
   {{ partial "qa" . }}
 </section>
 
 <section>
-  <h4 class="spacer">Other trees</h4>
+  <h2 class="spacer">Other trees</h2>
   <ul>
     {{ $other := where .Site.RegularPages "Title" "ne" .Name }} {{ range
     $other}}
