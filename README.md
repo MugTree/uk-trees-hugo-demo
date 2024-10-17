@@ -1,6 +1,6 @@
 # Basic hugo site
 
-🌎 https://mugtree.github.io/uktrees/
+🌎 https://mugtree.github.io/uk-trees-hugo-demo/
 
 - Pico CSS speed up development
 - Basic use of templates and partials
