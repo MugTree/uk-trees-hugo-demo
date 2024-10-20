@@ -20,8 +20,9 @@
 - [x] sizing for screen sizes - media queries
 - [x] Add a robots.txt to keep out of indexes
 - [x] Add a githubpages script to deploy
-- [] basic js table sort - add data attributes
+
+## To add
+
 - [] Using markdown attributes - add a bit of flexiblity
   https://gohugo.io/content-management/markdown-attributes
-
   ..
