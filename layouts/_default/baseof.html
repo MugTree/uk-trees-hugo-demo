@@ -29,3 +29,12 @@
           <a class="secondary" href="{{ .Site.BaseURL }}">UK Trees</a> 🌿
         </h3>
       </header>
+
+      {{ block "main" . }} {{ end}}
+    </main>
+    <footer class="container">
+      <hr />
+      <p>{{ time.Now | time.Format "2006" }}</p>
+    </footer>
+  </body>
+</html>

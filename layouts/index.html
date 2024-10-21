@@ -1,4 +1,4 @@
-{{ partial "head.html" . }}
+{{ define "main" }}
 
 <h1>{{.Title}}</h1>
 
@@ -18,4 +18,4 @@
   "trees") }} {{ partial "grid" $last}}
 </section>
 
-{{ partial "foot.html" .}}
+{{ end }}

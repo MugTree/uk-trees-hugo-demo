@@ -1,4 +1,4 @@
-{{ partial "head.html" . }}
+{{ define "main" }}
 
 <h1>{{.Title}} - ({{ .Params.Latin }})</h1>
 
@@ -37,4 +37,4 @@
   </ul>
 </section>
 
-{{ partial "foot.html" .}}
+{{ end }}
