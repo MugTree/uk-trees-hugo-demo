@@ -3,6 +3,9 @@ languageCode = 'en-us'
 title = 'UK trees'
 enableRobotsTXT = false
 
+[permalinks]
+trees = "/:slug/"
+
 # https://gohugo.io/hugo-modules/
 # https://blog.hugomods.com/posts/2023/03/how-to-use-hugo-modules/
 [module]
