@@ -1,4 +1,4 @@
-{{ $m := .Resources.Get "map.json"}} {{ if ne $m nil }}
+{{ $treeMap := .Resources.Get "map.json"}} {{ with $treeMap }}
 <div
   id="map"
   style="
@@ -20,12 +20,12 @@
     crossorigin=""
   ></script>
   <script>
-    let markers = {{ $m | transform.Unmarshal }};
+    let markers = {{ $treeMap | transform.Unmarshal }};
   </script>
 
-  {{ $map := resources.Get "/javascript/map.js"}}
+  {{ $mapData := resources.Get "/javascript/map.js"}}
 
-  <script src="{{ $map.RelPermalink }}"></script>
+  <script src="{{ $mapData.RelPermalink }}"></script>
 </div>
 <p class="caption">{{ .Title }} trees in the UK</p>
 {{ end }}

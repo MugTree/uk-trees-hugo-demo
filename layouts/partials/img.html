@@ -1,4 +1,4 @@
-{{ $img := resources.Get .Params.Image.Path }} {{ if ne $img nil }}
+{{ $img := resources.Get .Params.Image.Path }} {{ with $img }}
 <figure class="main-img">
   <img loading="lazy" width="340px" src="{{ $img.RelPermalink }}" alt="" />
   <figcaption class="caption">
