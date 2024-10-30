@@ -21,6 +21,22 @@
 - [x] Add a robots.txt to keep out of indexes
 - [x] Add a githubpages script to deploy
 
+## Questions
+
+How to test the type that resources.Get returns?
+
+```
+{{ $img := resources.Get .Params.Image.Path }} {{ with $img}} {{ $img :=
+$img.Crop "340x160" }}
+<img
+  loading="lazy"
+  width="340px"
+  class="grid-img"
+  src="{{ $img.RelPermalink }}"
+/>
+{{ end }}
+```
+
 ## To add
 
 - [] Using markdown attributes - add a bit of flexiblity
