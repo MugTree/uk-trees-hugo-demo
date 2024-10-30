@@ -37,6 +37,15 @@ $img.Crop "340x160" }}
 {{ end }}
 ```
 
+Something like this
+
+```
+{{ $img := resources.Get .Params.Image.Path }}
+<div>
+  {{ if and $img (eq $img.ResourceType "image") }} its an image {{ end}}
+</div>
+```
+
 ## To add
 
 - [] Using markdown attributes - add a bit of flexiblity

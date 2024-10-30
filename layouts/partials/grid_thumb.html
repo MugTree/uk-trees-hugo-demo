@@ -1,5 +1,8 @@
-{{ $img := resources.Get .Params.Image.Path }} {{ with $img}} {{ $img :=
-$img.Crop "340x160" }}
+{{ $img := resources.Get .Params.Image.Path }} {{/*
+<div>
+  {{ if and $img (eq $img.ResourceType "image") }} its an image {{ end}}
+</div>
+*/}} {{ with $img}} {{ $img := $img.Crop "340x160" }}
 <img
   loading="lazy"
   width="340px"
